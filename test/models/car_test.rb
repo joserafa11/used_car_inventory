@@ -9,7 +9,7 @@ class CarTest < ActiveSupport::TestCase
     car = Car.new(
       description: "", 
       serial_number: "123456789", 
-      car_status: "available",
+      car_status: "new_car",
       reception_date: DateTime.now.strftime("%Y-%m-%d %H:%M:%S"),
       dealership_id: @dealership.id,
       original_price: 9.99
@@ -21,7 +21,7 @@ class CarTest < ActiveSupport::TestCase
     car = Car.new(
       description: "Car 1", 
       serial_number: "123456789", 
-      car_status: "available",
+      car_status: "new_car",
       reception_date: DateTime.now.strftime("%Y-%m-%d %H:%M:%S"),
       dealership_id: @dealership.id,
       original_price: 9.99
@@ -30,7 +30,7 @@ class CarTest < ActiveSupport::TestCase
     car2 = Car.new(
       description: "Car 2", 
       serial_number: "123456789", 
-      car_status: "available",
+      car_status: "used_car",
       reception_date: DateTime.now.strftime("%Y-%m-%d %H:%M:%S"),
       dealership_id: @dealership.id,
       original_price: 9.99
@@ -42,7 +42,7 @@ class CarTest < ActiveSupport::TestCase
     car = Car.new(
       description: "Car 1", 
       serial_number: "3738292187", 
-      car_status: "available",
+      car_status: "used_car",
       reception_date: (DateTime.now - 2.months - 5.days).strftime("%Y-%m-%d %H:%M:%S"),
       dealership_id: @dealership.id,
       original_price: 10.0

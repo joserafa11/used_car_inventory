@@ -2,7 +2,7 @@
 
 one:
   original_price: 9.99
-  car_status: available
+  car_status: new_car
   description: Honda Civic 2010 Black
   reception_date: 2021-05-26 19:59:30
   serial_number: 29384398723987438
@@ -10,7 +10,7 @@ one:
 
 two:
   original_price: 9.99
-  car_status: available
+  car_status: used_car
   description: Ford Focus 2017 White with polarized windows
   reception_date: 2021-05-26 19:59:30
   serial_number: 30494298732739872

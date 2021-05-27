@@ -4,9 +4,8 @@ class CarStatuses
   attr_accessor :id, :name
 
   ALL_STATUSES = {
-    'available' => "Available",
-    'sold' => "Sold",
-    'reserved' => "Reserved"
+    'new_car' => "New",
+    'used_car' => "Used"
   }
   private_constant :ALL_STATUSES
   

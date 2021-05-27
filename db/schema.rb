@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2021_05_27_174031) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["dealership_id"], name: "index_cars_on_dealership_id"
+    t.index ["serial_number"], name: "index_cars_on_serial_number", unique: true
   end
 
   create_table "dealerships", force: :cascade do |t|
@@ -37,12 +38,6 @@ ActiveRecord::Schema.define(version: 2021_05_27_174031) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["code"], name: "index_settings_on_code", unique: true
   end
-
-# Could not dump table "sqlite_stat1" because of following StandardError
-#   Unknown type '' for column 'tbl'
-
-# Could not dump table "sqlite_stat4" because of following StandardError
-#   Unknown type '' for column 'tbl'
 
   create_table "users", force: :cascade do |t|
     t.string "username", default: "", null: false
