@@ -1,0 +1,31 @@
+<h1><%= link_to "←", root_path, title: "Back to Dealerships", class: "text-decoration-none" %> Inventory for <%= @dealership.name %></h1>
+<div class="text-right w100">
+  <% if current_user.is_admin? %>
+  <%= link_to 'New Car', new_car_path(dealership_id: @dealership.id) %>
+  <% end %>
+</div>
+<hr>
+<table width="100%">
+  <tr>
+    <th align="left">Description</th>
+    <th width="200">Serial Number</th>
+    <th align="right" width="300">Price</th>
+    <% if current_user.is_admin? %>
+    <th width="200">Actions</th>
+    <% end %>
+  </tr>
+
+  <% @cars.each do |car| %>
+  <tr>
+    <td><%= link_to car.description, car_path(car) %></td>
+    <td align="center" width="200"><%= car.serial_number %></td>
+    <td align="right"><%= '%.02f' % car.price %></td>
+    <% if current_user.is_admin? %>
+    <td align="center" width="200">
+      <%= link_to 'Edit', edit_car_path(car) %>
+      <%= link_to 'Delete', car_path(car), method: :delete, data: { confirm: "Are you sure?"} %>
+    </td>
+    <% end %>
+  </tr>
+  <% end %>
+  <table>

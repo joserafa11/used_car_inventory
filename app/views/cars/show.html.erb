@@ -1,0 +1,7 @@
+<h1><%= link_to "←", "/dealerships/#{@car.dealership_id}/cars", title: "Back to Inventory", class: "text-decoration-none" %> Car Details</h1>
+<div><strong>Description:</strong> <%= @car.description %></div>
+<div><strong>Price:</strong> <%= '%.02f' % @car.price %></div>
+<div><strong>Original Price:</strong> <%= '%.02f' % @car.original_price %></div>
+<div><strong>Reception Date:</strong> <%= @car.reception_date %></div>
+<div><strong>Serial Number:</strong> <%= @car.serial_number %></div>
+<div><strong>Status:</strong> <%= CarStatuses.get_name(@car.car_status) %></div>

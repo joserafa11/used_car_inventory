@@ -1,0 +1,44 @@
+<%= form_with model: car do |form| %>
+<%= form.hidden_field  :dealership_id %>
+<div>
+  <%= form.label :description %><br>
+  <%= form.text_field :description %>
+  <% car.errors.full_messages_for(:description).each do |message| %>
+  <div><%= message %></div>
+  <% end %>
+
+</div>
+<div>
+  <%= form.label :serial_number %><br>
+  <%= form.text_field :serial_number %>
+  <% car.errors.full_messages_for(:serial_number).each do |message| %>
+  <div><%= message %></div>
+  <% end %>
+</div>
+<div>
+  <%= form.label :original_price %><br>
+  <%= form.text_field :original_price %>
+  <% car.errors.full_messages_for(:original_price).each do |message| %>
+  <div><%= message %></div>
+  <% end %>
+</div>
+<div>
+  <%= form.label :car_status %><br>
+  <%= form.collection_select :car_status, CarStatuses.all, :id, :name %>
+  <% car.errors.full_messages_for(:car_status).each do |message| %>
+  <div><%= message %></div>
+  <% end %>
+</div>
+<div>
+  <%= form.label :reception_date %><br>
+  <%= form.date_field :reception_date %>
+  <% car.errors.full_messages_for(:reception_date).each do |message| %>
+  <div><%= message %></div>
+  <% end %>
+</div>
+
+<br>
+<div>
+  <%= form.submit %>
+</div>
+<% end %>
