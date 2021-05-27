@@ -37,9 +37,9 @@ This is a basic used cars inventory management software for small dealerships.
 
 - rails test
 
-* After you start the server you are going to be able to login with 2 users.
+After you start the server you are going to be able to login with 2 users.
 
-* user/user (a simple user without privileges)
-* admin/admin (a user with admin privileges that can add, edit and delete cars and dealerships)
+- user/user (a simple user without privileges)
+- admin/admin (a user with admin privileges that can add, edit and delete cars and dealerships)
 
 You can also register a new username / password and it will be always a simple user
