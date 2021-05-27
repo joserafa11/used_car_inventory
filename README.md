@@ -2,41 +2,44 @@
 
 This is a basic used cars inventory management software for small dealerships.
 
-- Ruby version
-  2.7.3p183
+## Ruby version
 
-- System dependencies
-  Ruby 2.7.3p183
-  Rails 6.1.3.2
-  NodeJs
-  Yarn
+- 2.7.3p183
 
-- Configuration
+## System dependencies
 
-# Clone this Repo
+- Ruby 2.7.3p183
+- Rails 6.1.3.2
+- NodeJs
+- Yarn
 
-# Install the required gems (bundle install)
+## Configuration
 
-# Generate binstubs for bundler (bundle binstubs bundler)
+- Clone this Repo
 
-# Install the webpacker dependencies (rails webpacker:install)
+- Install the required gems (bundle install)
 
-# Run migrations (rails db:migrate)
+- Generate binstubs for bundler (bundle binstubs bundler)
 
-# Seed the database (rails db:seed)
+- Install the webpacker dependencies (rails webpacker:install)
 
-# Start rails server (rails server)
+- Run migrations (rails db:migrate)
 
-- Database creation
+- Seed the database (rails db:seed)
 
-# The database is a file in SQLite, so it should be created automatically for you
+- Start rails server (rails server)
 
-- How to run the test suite
-  rails test
+## Database creation
 
-After you start the server you are going to be able to login with 2 users.
+- The database is a file in SQLite, so it should be created automatically for you
 
-- user/user (a simple user without privileges)
-- admin/admin (a user with admin privileges that can add, edit and delete cars and dealerships)
+## How to run the test suite
+
+- rails test
+
+* After you start the server you are going to be able to login with 2 users.
+
+* user/user (a simple user without privileges)
+* admin/admin (a user with admin privileges that can add, edit and delete cars and dealerships)
 
 You can also register a new username / password and it will be always a simple user
