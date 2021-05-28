@@ -6,7 +6,7 @@ class CreateCars < ActiveRecord::Migration[6.1]
       t.string :description
       t.datetime :reception_date
       t.string :serial_number, limit: 100
-      t.references :dealership, null: false, foreign_key: true
+      t.references :dealership, null: false, foreign_key: {on_delete: :cascade}
 
 
       t.timestamps

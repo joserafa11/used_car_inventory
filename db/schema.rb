@@ -52,5 +52,5 @@ ActiveRecord::Schema.define(version: 2021_05_27_174031) do
     t.index ["username"], name: "index_users_on_username", unique: true
   end
 
-  add_foreign_key "cars", "dealerships"
+  add_foreign_key "cars", "dealerships", on_delete: :cascade
 end
