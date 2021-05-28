@@ -29,6 +29,8 @@ This is a basic used cars inventory management software for small dealerships.
 
 - Start rails server (rails server)
 
+- It will run on http://localhost:3000
+
 ## Database creation
 
 - The database is a file in SQLite, so it should be created automatically for you
